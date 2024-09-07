@@ -25,7 +25,6 @@
         <button id="greetButton">Click Me</button> <!-- Button for interaction -->
     </section>
 
-
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
@@ -35,9 +34,23 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>You can reach me at: <a href="gupt0011@gmail.com">gupt0011@gmail.com</a></p>
+        <p>Send me a message using the form below:</p>
+        
+        <!-- Formspree Contact Form -->
+        <form action="https://formspree.io/f/xqazjgwr" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
-
